@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro de tareas diarias</h1>
+    <div class="form-container">
+        <form id="product-form">
+            <label for="titulo">Nombre del titulo:</label>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+
+            <label for="description">Descripción:</label>
+            <textarea id="descripcion" placeholder="Description" name="descripcion"></textarea>
+
+            <label for="expiryDate">Fecha de Vencimiento:</label>
+            <input type="date" id="expiryDate" name="expiryDate" required><br><br>
+
+            <label for="priority">Prioridad:</label>
+            <select id="priority"  name="priority" required>
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+
+            <button type="submit" class="btn btn-success">Guardar tarea</button> 
+        </form>
+    </div>
+</body>
+</html>
