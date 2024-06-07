@@ -14,22 +14,23 @@
             <textarea id="description" placeholder="Description" required></textarea>
             <input type="date" id="due-date" required>
             <select id="priority" required>
-                <option value="Alto">High</option>
-                <option value="medio">Medium</option>
-                <option value="Bajo">Low</option>
+                <option value="High">Alto</option>
+                <option value="Medium">Medio</option>
+                <option value="Low">Bajo</option>
             </select>
             <button type="submit">Add Task</button>
         </form>
         <input type="text" id="search" placeholder="Search tasks by title">
+        <button id="search-btn">Search</button>
         <table>
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Due Date</th>
-                    <th>Priority</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Titulo</th>
+                    <th>Descripcion</th>
+                    <th>Fecha de vencimiento</th>
+                    <th>Pioriad</th>
+                    <th>Estodo</th>
+                    <th>Aciones</th>
                 </tr>
             </thead>
             <tbody id="task-list">
