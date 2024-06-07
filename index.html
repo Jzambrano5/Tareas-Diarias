@@ -7,26 +7,35 @@
 </head>
 <body>
     <h1>Registro de tareas diarias</h1>
-    <div class="form-container">
-        <form id="product-form">
-            <label for="titulo">Nombre del titulo:</label>
-            <input type="text" id="titulo" name="titulo" required><br><br>
-
-            <label for="description">Descripción:</label>
-            <textarea id="descripcion" placeholder="Description" name="descripcion"></textarea>
-
-            <label for="expiryDate">Fecha de Vencimiento:</label>
-            <input type="date" id="expiryDate" name="expiryDate" required><br><br>
-
-            <label for="priority">Prioridad:</label>
-            <select id="priority"  name="priority" required>
-                <option value="alta">Alta</option>
-                <option value="media">Media</option>
-                <option value="baja">Baja</option>
+    <div class="container">
+        <form id="task-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="date" id="due-date" required>
+            <select id="priority" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
             </select>
-
-            <button type="submit" class="btn btn-success">Guardar tarea</button> 
+            <button type="submit">Add Task</button>
         </form>
+        <input type="text" id="search" placeholder="Search tasks by title">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+                <!-- Tasks will be added here -->
+            </tbody>
+        </table>
     </div>
+      <script src="Js/script.js"></script>
 </body>
 </html>
