@@ -34,3 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
         taskForm.reset();
     }
 });
+
+function updateOrDeleteTask(e) {
+    if (e.target.classList.contains('complete')) {
+        const statusCell = e.target.parentElement.previousElementSibling;
+        statusCell.textContent = statusCell.textContent === 'Pending' ? 'Completed' :
+    }
+}
